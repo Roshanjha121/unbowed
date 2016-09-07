@@ -1,0 +1,19 @@
+class Program
+   {
+    static int Main(string[] args)
+     {
+	Console.WriteLine("Enter the lower limit");
+	int a=Convert.ToInt32(Console.ReadLine());
+	
+	//Console.WriteLine(Math.Sqrt(a).ToString());	
+	
+	Console.WriteLine("Enter the higer limit");
+	int b=Convert.ToInt32(Console.ReadLine());
+	
+	if (b < 0 || b < a) 
+	return 0;
+	
+	//Console.WriteLine(Math.Sqrt(b).ToString());
+	return (int)Math.Sqrt(b) - (int)Math.Sqrt(a-1);
+	  }
+	}
