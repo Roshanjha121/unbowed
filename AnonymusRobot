@@ -1,0 +1,45 @@
+class Program
+   {
+    static void Main(string[] args)
+    {
+   
+  	int d = 0;
+  	Console.WriteLine("Enter the destination");
+	
+	//User enter the destination of robot
+	
+	int destination=Convert.ToInt32(Console.ReadLine());
+    do
+	{
+    Console.WriteLine("sir,pls order what to do"); 
+    string string1 = Console.ReadLine();
+    if(string1.Equals("goforward")){
+    d++;
+    Console.WriteLine("d="+d);
+    }
+    else if (string1.Equals("goback"))
+    {
+	d--;
+ 	Console.WriteLine("d="+d);
+    }
+    else 
+	{
+	Console.WriteLine("d="+d);
+	Console.WriteLine("WrongInput");
+	}	
+	}
+	while(d!=destination);
+    //when robot reaches the destination it stops automatically
+	}	 
+ 	}
+	
+	
+	
+public static class RobotTest
+{
+	private static int _destination = -100;
+	public static bool AmIAtDestination(int location)
+	{
+		return location == _destination;
+	}
+}
