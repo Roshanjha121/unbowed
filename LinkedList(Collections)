@@ -1,0 +1,21 @@
+class linklist
+{
+    static void Main()
+    {
+	
+	LinkedList<string> link = new LinkedList<string>();
+	
+	link.AddLast("one");
+	link.AddLast("two");
+	link.AddFirst("three");
+	//link.RemoveFirst();
+	
+	LinkedListNode<string> node = link.Find("one");
+	link.AddAfter(node, "inserted");
+	
+	foreach (var value in link)
+	{
+	    Console.WriteLine(value);
+	}
+    }
+}
