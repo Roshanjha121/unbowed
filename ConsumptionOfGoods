@@ -1,0 +1,35 @@
+public class MyClass
+{
+	public static void Main(string [] args)
+	{
+		Console.WriteLine("Hi I am Roshan!");
+
+	int unit;
+    Console.WriteLine("Enter the consumption");
+    unit=Convert.ToInt32(Console.ReadLine());
+	Console.WriteLine(+unit); 
+	if(unit>=0 && unit<=200)
+	{
+	int cost=0;
+	cost=Convert.ToInt32(0.5*unit);
+	Console.WriteLine("Amount to be paid by you: " +cost);
+	}
+	
+    if(unit>=200 && unit<=400)
+	
+	{
+	
+    int cost=0;
+ 	cost=Convert.ToInt32(100+0.65*(unit-200));
+	Console.WriteLine("Amount to be paid by you: " +cost);
+	
+	}
+	else
+	if(unit>=400 && unit>=600)
+	{
+	int cost=0;
+	cost=Convert.ToInt32(230+0.80*(unit-400));
+	Console.WriteLine("Amount to be paid by you: " +cost);
+	
+	}
+	}}
