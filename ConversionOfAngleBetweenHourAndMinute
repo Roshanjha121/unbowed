@@ -1,0 +1,28 @@
+public class Program
+    {
+        public static void Main(string[] args)
+        {
+			{
+			int hour = 0;
+			int minute = 0;
+            if(hour < 0 || minute < 0 || hour >12 || minute > 60)
+			
+			//validation of input
+			{ 
+				Console.WriteLine("Check your input");
+ 			}	
+			
+
+ 			Console.WriteLine("enter the hour ");
+
+			hour=Convert.ToInt32(Console.ReadLine());
+
+		    int hour_angle = Convert.ToInt32(0.5 * (hour*60 + minute));
+   			
+   			Console.WriteLine("enter the minute ");
+            minute=Convert.ToInt32(Console.ReadLine());
+			int minute_angle = 6*minute;
+   			int angle = (hour_angle - minute_angle);
+			Console.WriteLine(+angle);
+			} }
+		    }
